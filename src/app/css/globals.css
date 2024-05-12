@@ -1,8 +1,17 @@
-@tailwind base;
+@import "./base.css";
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer components {
+  .headerDiv{
+    @apply bg-bgLight text-gray-500 flex items-center justify-center p-1.5 rounded-full hover:bg-white border-[1px] border-gray-200 hover:border-orange-500;
+  }
+  .socialLink {
+    @apply bg-slate-100 p-1 text-darkText inline-flex items-center justify-center rounded-md text-lg hover:bg-red-600 hover:text-white cursor-pointer duration-200
+  }
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +39,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
