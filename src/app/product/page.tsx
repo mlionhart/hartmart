@@ -1,8 +1,8 @@
 import { getSingleProduct, getTrendingProducts } from "@/helpers";
 import Container from "@/components/Container";
 import ProductsData from "@/components/ProductsData";
-import Products from "@/components/Products";
 import SingleProduct from "@/components/SingleProduct";
+import { Products } from "../../../type";
 
 type Props = {
   searchParams: { [key: string]: string | string[] | undefined };
