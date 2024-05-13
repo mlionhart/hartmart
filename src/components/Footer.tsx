@@ -77,7 +77,7 @@ const Footer = () => {
             </li>
             <li className="flex flex-col">
               <span className="text-slate hover:text-orange-600 cursor-pointer duration-200">
-                Cher's New Music Video Will Blow Your Minds
+                Cher&apos;s New Music Video Will Blow Your Minds
               </span>
               <span className="text-orange-600">January 31, 2022</span>
             </li>
@@ -116,7 +116,11 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-lg mb-2">Pay us with your trusted services </p>
-          <Image src={payment} alt="payment banner image" className="w-full h-10 object-cover"/>
+          <Image
+            src={payment}
+            alt="payment banner image"
+            className="w-full h-10 object-cover"
+          />
         </div>
       </Container>
     </div>
