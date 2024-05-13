@@ -33,7 +33,7 @@ const PaymentForm = () => {
   const handleCheckout = async () => {
     // stripePromise gets us our value to talk to the stripe
     const stripe = await stripePromise;
-    const response = await fetch("http://localhost:3000/api/checkout", {
+    const response = await fetch(`${process.env.BASE_URL}/api/checkout`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
