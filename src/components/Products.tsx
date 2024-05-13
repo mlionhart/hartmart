@@ -2,6 +2,7 @@ import { getProducts } from "@/helpers";
 import React from "react";
 import ProductsData from "./ProductsData";
 import Container from "./Container";
+import type { Products } from "../../type";
 
 const Products = async () => {
   const products = await getProducts();
